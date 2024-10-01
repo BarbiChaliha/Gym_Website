@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayFit Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"> 
+
+           <!--we are writing this in style.css-->
+<style>              
+    /*CSS Reset*/
+    body{
+        font-family: 'BakBak One', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gymfit.png');
+        background-size: cover;
+        color: white; /*color of content*/
+    }
+    .left{ 
+        position: absolute;
+        left: 40px;
+        top: 12px;
+        display: inline-block; 
+        /*border: 2px solid red;*/
+    }
+    .mid{
+        display: block;
+        width: 39%;
+        margin: 12px auto;
+        /*border: 2px solid green;*/
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 12px;
+        display: inline-block;
+        /*border: 2px solid yellow;*/
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 17px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 17px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(177, 174, 174);
+    }
+    .left img{
+        width: 120px;
+        height: 70px;
+        filter: invert(100%); /*this will change white image to black and vice versa*/
+    }
+    .left div{
+        text-align: center;
+    }
+    .btn{
+        font-family: 'BakBak One', cursive;
+        margin: 0px 9px;/*top r pora margin nai diya and horizontally 9px disu*/
+        color: white;/*agorburot eitu likha nasilu because bodyr pora inherit korisil, but chrome r default setting mote button r bhitoror text is dark, so eitu inherit nohol and likhibo lagibo*/
+        background-color: black;
+        padding: 3px 15px;
+        border: 2px solid grey;
+        border-radius: 7px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(84, 79, 79);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 80px 40px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 10px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 394px;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 11px auto;
+        font-size: 18px;
+        font-family: 'BakBak One', cursive;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+</style>   
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="img/gym-logo2.png" alt="">
+            <div>StayFit Fitness</div>
+        </div>
+        <!--mid box for nav bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/fitnesscal.html">Fitness Calculater</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym in Guwahati Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
